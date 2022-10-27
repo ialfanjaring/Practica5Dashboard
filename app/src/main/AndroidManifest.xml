@@ -13,6 +13,13 @@
         android:theme="@style/Theme.05_Dashboard_Menu"
         tools:targetApi="31">
         <activity
+            android:name=".ResultActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -25,14 +32,18 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".EdadCaninaActivity"
-            android:exported="false"/>
-        <activity android:name=".CalculadoraActivity"
-            android:exported="false"/>
-        <activity android:name=".QuizzesActivity"
-            android:exported="false"/>
-        <activity android:name=".MusicActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".EdadCaninaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalculadoraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizzesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MusicActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
