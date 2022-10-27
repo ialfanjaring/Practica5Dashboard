@@ -1,18 +1,203 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        tools:context=".MenuActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_calculadora"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/red"
+                        android:layout_weight="0.65"
+                        android:clickable="true"
+                        android:layout_marginEnd="8dp"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView1"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_calculadora"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgView1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Calculadora"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_amigos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellow"
+                        android:layout_weight="0.55"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView2"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/musica"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgView2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Musica"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="14sp" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_perrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lime"
+                        android:layout_weight="0.55"
+                        android:clickable="true"
+                        android:layout_marginEnd="8dp"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView3"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_edad_canina"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgView3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Edad Canina"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="14sp" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_quizzes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/green"
+                        android:layout_weight="0.65"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView4"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_quizzes"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgView4"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="App Quizzes"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

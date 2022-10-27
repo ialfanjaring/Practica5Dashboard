@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Practica5Dashboard</string>
+    <string name="app_name">05_Dashboard_Menu</string>
+    <string name="result_format">If you were a dog, you would be %d years old</string>
+    <string name="you_have_to_insert_an_age">You have to insert an age.</string>
+    <string name="calculate">Calculate</string>
+    <string name="how_old_are_you">How old are you?</string>
+    <string name="your_age">Your age</string>
+    <string name="alberto_ejemplo">How old are you?</string>
+    <string name="bienvenidos_a_mi_app_calculadora">Welcome to the calculator</string>
+    <string name="introduzca_el_primer_n_mero">Enter the first number</string>
+    <string name="numero_1">number 1</string>
+    <string name="introduzca_el_n_mero_2">Enter the second number</string>
+    <string name="numero_2">number 2</string>
+    <string name="suma">+</string>
+    <string name="restar">-</string>
+    <string name="mult">x</string>
+    <string name="dividir">/</string>
+    <string name="el_resultado_de_la_operacion_es">The result is: %d</string>
+    <string name="error_rellenar_valores">Enter all the numbers:</string>
+    <string name="todo">ALL</string>
 </resources>

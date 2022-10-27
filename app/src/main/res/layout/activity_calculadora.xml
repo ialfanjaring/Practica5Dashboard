@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/entrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/bienvenidos_a_mi_app_calculadora"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/image_calculadora"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@id/entrada"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_calculadora"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/primerNumero_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_calculadora"
+            android:text="@string/introduzca_el_primer_n_mero"
+            android:textSize="17sp"
+            android:padding="16dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"/>
+
+        <EditText
+            android:id="@+id/primerNumero_edit"
+            android:layout_below="@id/primerNumero_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/numero_1"
+            android:padding="18dp"
+            android:inputType="number"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:autofillHints="" />
+
+
+        <TextView
+            android:id="@+id/segundoNumero_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/primerNumero_edit"
+            android:text="@string/introduzca_el_n_mero_2"
+            android:textSize="17sp"
+            android:padding="16dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            />
+
+        <EditText
+            android:id="@+id/segundoNumero_edit"
+            android:layout_below="@id/segundoNumero_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/numero_2"
+            android:padding="16dp"
+            android:inputType="number"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:importantForAutofill="no" />
+
+
+        <Button
+            android:id="@+id/btn_suma"
+            android:layout_below="@id/segundoNumero_edit"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="7sp"
+            android:text="@string/suma" />
+
+        <Button
+            android:id="@+id/btn_resta"
+            android:layout_width="93sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/btn_suma"
+            android:layout_alignBaseline="@id/btn_suma"
+            android:layout_marginHorizontal="6sp"
+
+            android:text="@string/restar" />
+
+        <Button
+            android:id="@+id/btn_multiplicacion"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/btn_resta"
+            android:layout_alignBaseline="@id/btn_resta"
+
+            android:text="@string/mult"
+            />
+        <Button
+            android:id="@+id/btn_dividir"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:text="@string/dividir"
+            android:layout_toEndOf="@+id/btn_multiplicacion"
+            android:layout_alignBaseline="@id/btn_multiplicacion"
+            android:layout_margin="7sp"
+            />
+
+        <TextView
+            android:id="@+id/Respuesta_TextView"
+            android:layout_below="@id/btn_suma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+
+    </RelativeLayout>
+</layout>
